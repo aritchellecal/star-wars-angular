@@ -1,0 +1,16 @@
+<div class="container">
+    <div *ngFor="let ch  of heroList" class="card" >
+        <div class="hero-header">
+            <div><h3>Sentient</h3></div>
+            <div></div>
+        </div>
+        <div class="her0-content">
+            <span>Name : {{ch.name}}</span>
+            <span>Height | Gender : {{ch.height}} | {{ch.gender}}</span>
+            <span>Hair color : {{ch.hair_color}}</span>
+            <span>Skin color : {{ch.skin_color}}</span>
+
+            <fa-icon class='icon' [icon]="faStar" (click)="addTofavorite()"  [class.icon-yellow]="isFavorite"></fa-icon>
+        </div>
+    </div>
+</div>
